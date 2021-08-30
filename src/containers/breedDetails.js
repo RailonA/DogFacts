@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchBreed } from '../store/actions/thunk';
 
-const CryptoDetails = () => {
-  const breedData = useSelector((state) => state.cryptoReducer.data);
+const breedDetails = () => {
+  const breedData = useSelector((state) => state.breedReducer.data);
   const { id } = useParams();
   const dispatch = useDispatch();
 
@@ -13,13 +13,14 @@ const CryptoDetails = () => {
   }, []);
 
   return (
-    breedData.breed.map((breed) => {
+    breedData.id.map((breed) => {
       if (breed.id === id) {
         return (
           <div className="content-wrapper" key={breed.id}>
 
             <p>
               {breed.name}
+              {breed.id}
             </p>
 
           </div>
@@ -30,4 +31,4 @@ const CryptoDetails = () => {
   );
 };
 
-export default CryptoDetails;
+export default breedDetails;
