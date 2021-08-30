@@ -1,13 +1,9 @@
-import React from 'react';
+import FilterForm from './components/filterForm';
 
 function App() {
   return (
     <div>
-      <div>
-        <p>
-          Hellow World!
-        </p>
-      </div>
+      <FilterForm />
     </div>
   );
 }
