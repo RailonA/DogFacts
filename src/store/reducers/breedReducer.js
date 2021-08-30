@@ -10,7 +10,7 @@ const breedReducer = (state = initialState, action) => {
     case 'FETCH-DATA':
       return {
         ...state,
-        breed: action.data,
+        data: action.data,
       };
     default:
       return state;

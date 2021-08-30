@@ -1,3 +1,3 @@
-export const FETCH_DATA = 'loading_meals';
-export const FILTER_ACTION = 'filterAction';
-export const SELCTED_ACTION = 'selectedAction';
+export const FETCH_DATA = 'fetch_data';
+export const CHANGE_FILTER = 'change_filter';
+export const SELECT_BREED = 'selected_breed';
