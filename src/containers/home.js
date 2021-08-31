@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { filterAction } from '../store/actions/index';
-import { fetchBreed } from '../store/actions/thunk';
+import fetchBreed from '../store/actions/thunk';
 import FilterForm from '../components/filterForm';
 import Dog from '../components/dog';
 
