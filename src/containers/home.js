@@ -22,19 +22,18 @@ const BreedList = () => {
   const filteredBreeds = (filter !== '') ? breedsData.id.filter((breeds) => breeds.name === filter) : breedsData.breeds;
   return (
 
-    <div className="home-wrapper">
-      <div className="menu-items">
-        <i className="qrcode icon" />
+    <div>
+      <div>
         <p>Home</p>
       </div>
 
-      <div className="main-content">
-        <div className="image-section">
+      <div>
+        <div>
           <FilterForm onCrytoFilter={handleFilterChanger} />
         </div>
         <div>
           {filteredBreeds.map((breeds) => (
-            <Link to={`/details/${breeds.id}`} key={breeds.id} className="a-card-wrapper">
+            <Link to={`/${breeds.id}`} key={breeds.id}>
               <DOG
                 key={breeds.id}
                 name={breeds.name}

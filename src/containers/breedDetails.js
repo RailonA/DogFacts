@@ -16,7 +16,7 @@ const breedDetails = () => {
     breedData.id.map((breed) => {
       if (breed.id === id) {
         return (
-          <div className="content-wrapper" key={breed.id}>
+          <div key={breed.id}>
 
             <p>
               {breed.name}

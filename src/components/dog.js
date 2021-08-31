@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Breed = ({
+const Dog = ({
   name,
 }) => (
-  <div className="high">
+  <div>
     {name}
   </div>
 );
 
-Breed.propTypes = {
+Dog.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
-export default Breed;
+export default Dog;
