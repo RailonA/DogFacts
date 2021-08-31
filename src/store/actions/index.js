@@ -16,7 +16,5 @@ const selectedBreed = (breed) => ({
 });
 
 export {
-  fetchDataSuccessAction,
-  filterAction,
-  selectedBreed,
+  fetchDataSuccessAction, filterAction, selectedBreed,
 };
