@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => (
   <div>
     <div>
-      <Link to="/" className="active item nav-logo">BreedList</Link>
+      <Link to="/">BreedList</Link>
     </div>
   </div>
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { filterAction } from '../store/actions/index';
 import { fetchBreed } from '../store/actions/thunk';
 import FilterForm from '../components/filterForm';
-import DOG from '../components/dog';
+import Dog from '../components/dog';
 
 const BreedList = () => {
   const breedsData = useSelector((state) => state.breedReducer.data);
@@ -20,6 +20,10 @@ const BreedList = () => {
   }, []);
 
   const filteredBreeds = (filter !== '') ? breedsData.id.filter((breeds) => breeds.name === filter) : breedsData.breeds;
+
+  console.log(filteredBreeds);
+  console.log(breedsData);
+
   return (
 
     <div>
@@ -29,12 +33,12 @@ const BreedList = () => {
 
       <div>
         <div>
-          <FilterForm onCrytoFilter={handleFilterChanger} />
+          <FilterForm onBreedToFilter={handleFilterChanger} />
         </div>
         <div>
           {filteredBreeds.map((breeds) => (
             <Link to={`/${breeds.id}`} key={breeds.id}>
-              <DOG
+              <Dog
                 key={breeds.id}
                 name={breeds.name}
               />

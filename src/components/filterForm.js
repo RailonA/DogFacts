@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FilterForm = ({ onCBreedToFilter }) => (
+const FilterForm = ({ onBreedToFilter }) => (
   <div>
-    <input type="text" placeholder="Enter Breed" onChange={onCBreedToFilter} />
+    <input type="text" placeholder="Enter Breed" onChange={onBreedToFilter} />
   </div>
 
 );
 
 FilterForm.propTypes = {
-  onCBreedToFilter: PropTypes.func,
+  onBreedToFilter: PropTypes.func,
 };
 
 FilterForm.defaultProps = {
-  onCBreedToFilter: () => {
+  onBreedToFilter: () => {
 
   },
 };
