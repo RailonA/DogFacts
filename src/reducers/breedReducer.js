@@ -1,17 +1,9 @@
-const initialState = {
-  data: {
-    breeds: [
+const initialState = [];
 
-    ],
-  },
-};
 const breedReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'FETCH_DATA':
-      return {
-        ...state,
-        data: action.data,
-      };
+      return action.data;
     default:
       return state;
   }

@@ -1,10 +1,8 @@
 const selectBreedReducer = (state = {}, action) => {
   switch (action.type) {
     case 'SELECT_BREED':
-      return {
-        ...state,
-        // ...breeds,
-      };
+      return action.breed;
+
     default:
       return state;
   }
