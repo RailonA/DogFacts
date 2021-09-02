@@ -17,7 +17,7 @@ export const selectedBreed = (breed) => ({
 
 export const fetchBreeds = () => async (dispatch) => {
   try {
-    const response = await axios.get('https://api.thedogapi.com/v1/breeds');
+    const response = await axios.get('https://api.thedogapi.com/v1/breeds?limit=20');
     const breeds = await response.data;
     dispatch(fetchData(breeds));
   } catch (error) {

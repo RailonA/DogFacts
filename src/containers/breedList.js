@@ -17,6 +17,7 @@ const BreedList = () => {
   useEffect(() => {
     dispatch(fetchBreeds());
   }, []);
+  console.log(breedsData);
 
   const filteredBreeds = (filter !== '') ? breedsData.filter((breeds) => breeds.id === filter) : breedsData;
   return (
@@ -29,12 +30,16 @@ const BreedList = () => {
         </div>
         <div>
           {filteredBreeds.map((breeds) => (
-            <Link to={`${breeds.id}`} key={breeds.id}>
+            <Link to={`/${breeds.id}`} key={breeds.id}>
               <DogCard
-                key={breeds.id}
+                id={breeds.id}
                 name={breeds.name}
-                LifeSpan={breeds.LifeSpan}
+                lifeSpan={breeds.lifeSpan}
                 origin={breeds.origin}
+                temperament={breeds.temperament}
+                image={breeds.image.url}
+                weight={breeds.weight.imperial}
+                height={breeds.height.imperial}
 
               />
             </Link>

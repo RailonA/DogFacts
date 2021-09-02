@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { filterAction, fetchBreeds } from '../Actions/index';
+import '../styles/filterForm.css';
 
 const FilterForm = () => {
   const breedsData = useSelector((state) => state.breedReducer);
@@ -18,12 +19,12 @@ const FilterForm = () => {
   const filteredBreeds = (filter !== '') ? breedsData.filter((breeds) => breeds.id === filter) : breedsData;
 
   return (
-    <div>
-      <div>
-        <p>Select Dog Breed</p>
+    <div className="searchWrapper d-flex justify-content-center mt-3 mb-3">
+      <div className="d-flex flex-column justify-content-center text-center mb-3">
+        <p className="selectBreed">Select Dog Breed</p>
         <select>
           {filteredBreeds.map((dogBreeds) => (
-            <option key={dogBreeds.id} onClick={handleFilterChanger}>
+            <option className="text-center" key={dogBreeds.id} onClick={handleFilterChanger}>
               {dogBreeds.name}
             </option>
           ))}

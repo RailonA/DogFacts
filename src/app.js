@@ -1,8 +1,8 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import BreedList from './containers/breedList';
 import BreedDetails from './containers/breedDetails';
-
 import Navbar from './Components/navbar';
+import './styles/index.css';
 
 function App() {
   return (
