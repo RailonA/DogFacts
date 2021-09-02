@@ -23,9 +23,9 @@ const FilterForm = () => {
       <div className="d-flex flex-column justify-content-center text-center mb-3">
         <p className="selectBreed">Select Dog Breed</p>
         <select>
-          {filteredBreeds.map((dogBreeds) => (
-            <option className="text-center" key={dogBreeds.id} onClick={handleFilterChanger}>
-              {dogBreeds.name}
+          {filteredBreeds.map((breeds) => (
+            <option className="text-center" key={breeds.id} onClick={handleFilterChanger}>
+              {breeds.name}
             </option>
           ))}
         </select>
