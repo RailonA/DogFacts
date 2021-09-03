@@ -18,7 +18,6 @@ const BreedList = () => {
     dispatch(fetchBreeds());
   }, []);
 
-  console.log(breedsData);
   const filteredBreeds = (filter !== '') ? breedsData.filter((breeds) => breeds.id === filter) : breedsData;
   return (
 
@@ -29,17 +28,17 @@ const BreedList = () => {
           <FilterForm onBreedToFilter={handleFilterChanger} />
         </div>
         <div>
-          {filteredBreeds.map((breeds) => (
-            <Link to={`/${breeds.id}`} key={breeds.id}>
+          {filteredBreeds.map((breed) => (
+            <Link to={`/details/${breed.id}`} key={breed.id}>
               <DogCard
-                id={breeds.id}
-                name={breeds.name}
-                lifeSpan={breeds.life_Span}
-                origin={breeds.origin}
-                temperament={breeds.temperament}
-                image={breeds.image.url}
-                weight={breeds.weight.imperial}
-                height={breeds.height.imperial}
+                id={breed.id}
+                name={breed.name}
+                lifeSpan={breed.life_Span}
+                origin={breed.origin}
+                temperament={breed.temperament}
+                image={breed.image.url}
+                weight={breed.weight.imperial}
+                height={breed.height.imperial}
               />
             </Link>
           ))}
