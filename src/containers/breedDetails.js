@@ -12,9 +12,6 @@ const breedDetails = () => {
     dispatch(fetchBreeds());
   }, []);
 
-  console.log(breedData);
-  console.log(parseInt(id, 10));
-
   return (
     breedData.map((breed) => {
       if (breed.id === (parseInt(id, 10))) {
