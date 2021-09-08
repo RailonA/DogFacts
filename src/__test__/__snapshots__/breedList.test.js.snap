@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreedList DOM renders correctly when store is provided 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        className="searchWrapper d-flex  justify-content-center"
+      >
+        <select
+          className="searchBar text-center "
+          onChange={[Function]}
+        />
+      </div>
+    </div>
+    <div
+      className=" d-flex container flex-wrap"
+    >
+      <div
+        className="row "
+      >
+        <div
+          className="d-flex flex-wrap  justify-content-center"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

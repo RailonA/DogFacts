@@ -12,7 +12,6 @@ const breedDetails = () => {
   useEffect(() => {
     dispatch(fetchBreeds());
   }, []);
-
   console.log(breedData);
   return (
     breedData.map((breed) => {
