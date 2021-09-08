@@ -12,9 +12,11 @@ const FilterForm = ({ onBreedToFilter }) => {
   ));
 
   return (
-    <select onChange={onBreedToFilter} key={breedsData.id}>
-      {options}
-    </select>
+    <div className="searchWrapper d-flex  justify-content-center">
+      <select className="searchBar text-center " onChange={onBreedToFilter} key={breedsData.id}>
+        {options}
+      </select>
+    </div>
   );
 };
 
