@@ -17,7 +17,7 @@ const breedDetails = () => {
     breedData.map((breed) => {
       if (breed.id === (parseInt(id, 10))) {
         return (
-          <div key={breed.id} className="breedDetailWrapper d-flex flex-column justify-content-center">
+          <div key={breed.id} className="breedDetailWrapper col-12 d-flex flex-column justify-content-center">
             <div className="d-flex justify-content-center">
               <h1 className="p-3">{breed.name}</h1>
             </div>
