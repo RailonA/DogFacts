@@ -26,19 +26,19 @@ describe('Reducers', () => {
     filter: 2,
   };
 
-  it('crypto reducer has an initial empty content', () => {
+  it('breed reducer has an initial empty content', () => {
     expect(breedReducer([], {})).not.toEqual(undefined);
   });
 
-  it('crypto reducer has an initial state', () => {
+  it('breed reducer has an initial state', () => {
     expect(breedReducer([], {})).toEqual([]);
   });
 
-  it('crypto reducer has cryptocurrencies in state', () => {
+  it('breed reducer has breed.id in state', () => {
     expect(breedReducer({}, action)).not.toEqual(mockData);
   });
 
-  it('crypto reducer has cryptocurrencies in state', () => {
+  it('breed reducer has breed.id in state', () => {
     expect(breedReducer({}, action)).toEqual({});
   });
 
