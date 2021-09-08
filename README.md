@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# BreedFacts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This project is the final capstone for Microverse's React and Redux module with the aim of building a catalog application that consumes an API using external API', React.js and Redux for state management.
 
-## Available Scripts
+<p align="center">
+    <a href="https://img.shields.io/badge/Microverse-blueviolet" alt="Contributors">
+        <img src="https://img.shields.io/badge/Microverse-blueviolet" /></a>
+    <a href="https://www.javascript.com/" alt="JS">
+        <img src="https://img.shields.io/badge/javaScript-ES6-yellow" /></a>
+    <a href="https://webpack.js.org//" alt="Webpack">
+        <img src="https://img.shields.io/badge/Webpack.js-5.21.2-blue" /></a>
+    <a href="https://eslint.org/" alt="Eslint">
+        <img src="https://img.shields.io/badge/eslint-6.8.0-red" /></a>
+    <a href="https://stylelint.io/" alt="Stylelint">
+        <img src="https://img.shields.io/badge/Stylelint-13.3.x-green" /></a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+    <br />
+    <br />&#10023;
+    <a href="#Prerequisites">Watch the Live Version</a> &#10023;
+    <a href="#Prerequisites">Prerequisites</a> &#10023;
+    <a href="#Getting-Started">Getting Started</a> &#10023;
+    <a href="#Usage">Usage</a> &#10023;
+    <a href="#Contributing">Contributing</a> &#10023;
+    <a href="#Author">Author</a> &#10023;
+    <a href="#Show-your-support">Show your support</a> &#10023;
+    <a href="#License">License</a> &#10023;
+    <a href="#Acknowledgments">Acknowledgments</a> &#10023;
+    <a href="https://github.com/Rashad-Muntar/to-do">Report Bug</a>&#10023;
 
-### `yarn start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Homepage
+<b>BreedFact app</b> The main goal of this project is to understand how to work with API modules using React.js and Redux for state management. This application fetches real-time data of top 20 dog breeds. User is able to select breed from dropdown or clicking DogCard and see more information on the breed.
 
-### `yarn test`
+### Homepage
+![Screenshot](./src/assets/homePage.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Details page
+![Screenshot](./src/assets/detailPage.png)
 
-### `yarn build`
+## Live Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Visit [Live Demo](https://thedoglist.herokuapp.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React.js
+- Redux
+- Text Editor
+- Git
+- NodeJS
+- Webpack
+- Heroku
+- Jest
+- Semantic UI
+- coinstats API
 
-### `yarn eject`
+## Getting API from Coinstats
+Coinstats API is an open API with no requirement for API key
+- Go to `https://thedogapi.com/`
+- Copy the global endpoint
+- Use API in the application
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## How to clone Repo
+1. Open your Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Copy and paste the following code into the Terminal :
+   ```bash
+   $ git clone git@github.com:RailonA/DogFacts.git
+   ```
+4. Run `cd dogFacts`
+5. Install the needed dependencies 
+    ```bash
+    $ npm install
+    ```
+6. In develoment mode run 
+    ```bash
+    npm start
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Usage
+Lauch the local version of this project opening the `localhost:3000` in your browser
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
 
-## Learn More
+Feel free to check the [issues page](https://github.com/RailonA/DogFacts/issues).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+👤 **Railon Acosta**
 
-### Code Splitting
+- GitHub: [@railonA](https://github.com/RailonA)
+- Linkedin: [@railonAcosta](https://www.linkedin.com/in/railon-acosta-81265180/)
+- Twitter: [@railonAcosta](https://twitter.com/RailonAcosta)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+### Attribution
+Coinstats API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License
