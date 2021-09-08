@@ -12,7 +12,7 @@ const breedDetails = () => {
   useEffect(() => {
     dispatch(fetchBreeds());
   }, []);
-  console.log(breedData);
+
   return (
     breedData.map((breed) => {
       if (breed.id === (parseInt(id, 10))) {
