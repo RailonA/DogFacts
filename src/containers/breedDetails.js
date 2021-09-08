@@ -28,6 +28,7 @@ const breedDetails = () => {
             <div className="d-flex mt-5 p-4 flex-column justify-content-center infoContainer">
               <div className="d-flex justify-content-start">
                 <p className="mr-1 detailInfo">Weight: </p>
+                <p className="ml-1">lbs </p>
                 <p>
                   {breed.weight.imperial}
                 </p>
@@ -37,6 +38,7 @@ const breedDetails = () => {
                 <p>
                   {breed.height.imperial}
                 </p>
+                <p className="ml-1">inch </p>
               </div>
               <div className="d-flex justify-content-start">
                 <p className="mr-1 detailInfo">Temperment: </p>

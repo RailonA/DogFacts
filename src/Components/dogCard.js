@@ -5,7 +5,7 @@ import '../styles/dogCard.css';
 const DogCard = ({
   name, image, weight, height,
 }) => (
-  <div className="dogCard p-3">
+  <div className="dogCard p-3 col">
     <div className="d-flex justify-content-center ">
       <img src={image} alt="dogImage" className="dogImg d-flex align-self-center" />
     </div>

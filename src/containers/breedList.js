@@ -23,27 +23,29 @@ const BreedList = () => {
 
     <div>
 
-      <div className="d-flex justify-content-center flex-column">
+      <div>
         <div>
           <FilterForm onBreedToFilter={handleFilterChanger} />
         </div>
-        <div className="col-12 flex-xs-colomn flex-nowrap justify-content-center">
-          {filteredBreeds.map((breed) => (
-            <Link to={`/details/${breed.id}`} key={breed.id}>
-              <div className="d-flex flex-nowrap col-xs-12 col-sm-5 col-md-5 justify-content-center">
-                <DogCard
-                  id={breed.id}
-                  name={breed.name}
-                  lifeSpan={breed.life_Span}
-                  origin={breed.origin}
-                  temperament={breed.temperament}
-                  image={breed.image.url}
-                  weight={breed.weight.imperial}
-                  height={breed.height.imperial}
-                />
-              </div>
-            </Link>
-          ))}
+        <div className=" d-flex container flex-wrap">
+          <div className="row ">
+            <div className="d-flex flex-wrap  justify-content-center">
+              {filteredBreeds.map((breed) => (
+                <Link to={`/details/${breed.id}`} key={breed.id} className="col-12 col-md-6">
+                  <DogCard
+                    id={breed.id}
+                    name={breed.name}
+                    lifeSpan={breed.life_Span}
+                    origin={breed.origin}
+                    temperament={breed.temperament}
+                    image={breed.image.url}
+                    weight={breed.weight.imperial}
+                    height={breed.height.imperial}
+                  />
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
