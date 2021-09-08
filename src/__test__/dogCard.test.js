@@ -8,6 +8,7 @@ describe('DogCard DOM', () => {
     const dogCard = renderer.create(
       <DogCard
         name="name"
+        alt="dogImage"
         weight="5"
         height="5"
       />,
@@ -19,10 +20,11 @@ describe('DogCard DOM', () => {
     const dogCard = renderer.create(
       <DogCard
         name="name"
+        alt="dogImage"
         weight="5"
         height="5"
       />,
     ).toJSON();
-    expect(dogCard.name).not.toBe('random');
+    expect(dogCard.name).not.toBe('name');
   });
 });

@@ -33,7 +33,6 @@ DogCard.propTypes = {
   image: PropTypes.string.isRequired,
   weight: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
-
 };
 
 export default DogCard;
