@@ -8,7 +8,7 @@ describe('DogCard DOM', () => {
     const dogCard = renderer.create(
       <DogCard
         name="name"
-        alt="dogImage"
+        image="dogImage"
         weight="5"
         height="5"
       />,
@@ -20,7 +20,7 @@ describe('DogCard DOM', () => {
     const dogCard = renderer.create(
       <DogCard
         name="name"
-        alt="dogImage"
+        image="dogImage"
         weight="5"
         height="5"
       />,

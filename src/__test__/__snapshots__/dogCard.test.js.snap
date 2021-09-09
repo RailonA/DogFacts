@@ -10,6 +10,7 @@ exports[`DogCard DOM renders correctly 1`] = `
     <img
       alt="dogImage"
       className="dogImg d-flex align-self-center"
+      src="dogImage"
     />
   </div>
   <div
