@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
 import '../styles/filterForm.css';
 
-const FilterForm = ({ onBreedToFilter }) => {
-  const breedsData = useSelector((state) => state.breedReducer);
-  const options = breedsData.map((breed) => (
+const FilterForm = ({ onBreedToFilter, allBreeds }) => {
+  const options = allBreeds.map((breed) => (
     <option value={breed.id} key={breed.id}>
       {breed.name}
     </option>
@@ -13,7 +11,7 @@ const FilterForm = ({ onBreedToFilter }) => {
 
   return (
     <div className="searchWrapper d-flex  justify-content-center">
-      <select className="searchBar text-center " onChange={onBreedToFilter} key={breedsData.id}>
+      <select className="searchBar text-center " onChange={onBreedToFilter} key={allBreeds.id}>
         {options}
       </select>
     </div>
@@ -22,6 +20,7 @@ const FilterForm = ({ onBreedToFilter }) => {
 
 FilterForm.propTypes = {
   onBreedToFilter: PropTypes.func,
+  allBreeds: PropTypes.arrayOf.isRequired,
 };
 
 FilterForm.defaultProps = {

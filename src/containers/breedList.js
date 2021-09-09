@@ -25,7 +25,7 @@ const BreedList = () => {
 
       <div>
         <div>
-          <FilterForm onBreedToFilter={handleFilterChanger} />
+          <FilterForm onBreedToFilter={handleFilterChanger} allBreeds={breedsData} />
         </div>
         <div className=" d-flex container flex-wrap">
           <div className="row ">
