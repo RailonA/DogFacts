@@ -1,0 +1,24 @@
+
+.dogCard {
+  border: 3px solid black;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(73, 73, 73);
+  color: white;
+  border-radius: 10px;
+}
+
+.dogInfo {
+  font-weight: bold;
+}
+
+.dogImg {
+  height: 80%;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.dogMainInfo {
+  background-color: rgb(161, 161, 161);
+  border-radius: 10px;
+}

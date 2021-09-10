@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DogCard DOM renders correctly 1`] = `
+<div
+  className="dogCard p-3 col"
+>
+  <div
+    className="d-flex justify-content-center "
+  >
+    <img
+      alt="dogImage"
+      className="dogImg d-flex align-self-center"
+      src="dogImage"
+    />
+  </div>
+  <div
+    className="mt-3 dogMainInfo d-flex flex-column justify-content-center "
+  >
+    <div
+      className="d-flex justify-content-center mt-3 "
+    >
+      <p
+        className="d-flex  dogInfo mr-3"
+      >
+        Name: 
+      </p>
+      <p>
+        name
+      </p>
+    </div>
+    <div
+      className="d-flex justify-content-center"
+    >
+      <p
+        className="d-flex dogInfo mr-3"
+      >
+        weight:
+      </p>
+      <p>
+        5
+      </p>
+      <p
+        className="ml-1"
+      >
+        lbs
+      </p>
+    </div>
+    <div
+      className="d-flex justify-content-center"
+    >
+      <p
+        className="d-flex dogInfo mr-3"
+      >
+        height:
+      </p>
+      <p>
+        5
+      </p>
+      <p
+        className="ml-1"
+      >
+        inch
+      </p>
+    </div>
+  </div>
+</div>
+`;

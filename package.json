@@ -7,25 +7,35 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.15.0",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "@types/react-test-renderer": "^17.0.1",
+    "axios": "^0.21.1",
     "big.js": "^5.2.2",
     "bindings": "^1.5.0",
+    "bootstrap": "^5.1.0",
+    "dotenv": "^10.0.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-markdown": "^2.2.0",
     "file-uri-to-path": "^2.0.0",
+    "font-awesome": "^4.7.0",
     "nan": "^2.15.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
+    "react-dropdown": "^1.9.2",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "react-select": "^4.3.1",
     "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
@@ -64,6 +74,7 @@
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
     "expect": "^27.0.6",
-    "react-test-renderer": "^17.0.2"
+    "react-test-renderer": "^17.0.2",
+    "redux-mock-store": "^1.5.4"
   }
 }
